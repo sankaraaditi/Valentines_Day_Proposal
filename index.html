@@ -2,12 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>For the loml💘</title>
+    <title>For You 💘</title>
 
     <link rel="stylesheet" href="./Styles/styles.css">
     <script src="./script.js" defer></script>
 
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fff0f6;
+        }
+
         .made-with-love {
             position: fixed;
             bottom: 10px;
@@ -16,6 +22,35 @@
             text-align: center;
             color: #777;
             font-size: 14px;
+        }
+
+        .header_text {
+            margin: 10px 0;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 10px;
+            background-color: #ff6b81;
+            color: white;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+        }
+
+        .gif_container img {
+            max-width: 300px;
+            border-radius: 15px;
         }
     </style>
 </head>
@@ -40,6 +75,10 @@
             <button class="btn" id="noButton" onmouseover="moveButton()">No 😶</button>
         </div>
 
+        <audio id="bgMusic" loop>
+            <source src="HereWithMe.mp3" type="audio/mpeg">
+        </audio>
+
         <p class="made-with-love">
             Made with love by Aditi 💗
         </p>
@@ -47,3 +86,4 @@
     </div>
 </body>
 </html>
+
